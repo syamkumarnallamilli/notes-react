@@ -226,6 +226,9 @@ jsx
 🔹 propName → Name of the prop
 🔹 { key1: value1, key2: value2 } → Object passed as a prop
 
+
+
+
 # What is the key?
 key is a unique identifier assigned to each list item in React.
 It helps React efficiently update the UI when the list changes.

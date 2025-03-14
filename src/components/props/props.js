@@ -1,10 +1,25 @@
+// import React from "react";
+// function Properties(value){
+//         return(
+//             <div>
+//             <p>Hi! I'am {value.name}</p>
+//             <p> I'am {value.age} years old.</p>
+//             {value.children}
+//             </div>
+//         );
+// }
+// export default Properties;
+
+//destructuring prop
 import React from "react";
-function Properties(props){
+function Properties({name,age}){
+    // function Properties({props}){
+    //     const{name,age}=props
         return(
             <div>
-            <p>Hi! I'am {props.name}</p>
-            <p> I'am {props.age} years old.</p>
-            {props.children}
+            <p>Hi! I'am {name}</p>
+            <p> I'am {age} years old.</p>
+            
             </div>
         );
 }

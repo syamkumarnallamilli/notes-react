@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
- import Greet from './components/FunctionComponent/Greet';
+import Greet from './components/FunctionComponent/Greet';
 import MyclassComponent from './components/ClassComponent/Welcome';
 import Hello from './components/withOutJSX';
 import JsxDifferences from './components/FunctionComponent/JsxDifference';
@@ -15,7 +15,10 @@ import IncreDecre from './components/FunctionComponent/Counter1';
 import LoginForm from './components/FunctionComponent/Login';
 import Character from './components/FunctionComponent/CharacterCount';
 import Gallery from './components/Profiles';
-// import { Greet } from './components/Greet';
+import Click from './components/EventHandling/FunctionClick';
+import ClassClick from './components/EventHandling/ClassClick';
+import Parent from './components/props/Parent';
+
 
 function App() {
   const fruits=["apple","banana","orange","grapes"];
@@ -43,7 +46,13 @@ function App() {
       <IncreDecre/>
       <LoginForm/>
       <Character/>
-      {/* <Gallery/> */}
+      <Gallery/>
+
+      <Click/>
+
+      <ClassClick/>
+
+      <Parent/>
     </div>
   );
 }
