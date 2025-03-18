@@ -15,7 +15,7 @@ const LoginForm=()=>{
             <input type="email"
                 value={email}
                 onChange={(e)=>setEmail(e.target.value)}
-                o
+                
             required></input>
             <label>Password:</label>
             <input type="password" 

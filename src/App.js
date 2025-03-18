@@ -18,6 +18,12 @@ import Gallery from './components/Profiles';
 import Click from './components/EventHandling/FunctionClick';
 import ClassClick from './components/EventHandling/ClassClick';
 import Parent from './components/props/Parent';
+import EventBind from './components/ClassComponent/EventBind';
+import ParentComponent from './components/ClassComponent/ParentComponent';
+import ClassRendering from './components/ClassComponent/ConditionalRendering';
+import CounterApp from './components/useState Problems/counterBasic';
+import ToggleText from './components/useState Problems/ToggleText';
+import BackgroundColor from './components/useState Problems/Background';
 
 
 function App() {
@@ -40,7 +46,7 @@ function App() {
       
       <Items itemsList={fruits}><p>this is fruits</p></Items>
       <MyProp name="syam" age={23}/>
-      <ClassState/>
+      {/* <ClassState/>
       <Counter/>
       <CounterFunc/>
       <IncreDecre/>
@@ -53,6 +59,17 @@ function App() {
       <ClassClick/>
 
       <Parent/>
+        <EventBind/>
+
+        <ParentComponent/>
+
+        <ClassRendering/> */}
+
+        {/* UseStae Problems */}
+        <CounterApp/>
+        <ToggleText/>
+
+        <BackgroundColor/>
     </div>
   );
 }

@@ -7,7 +7,7 @@ function jsxDifferences(){
         <div>
             {/* htmlFor instead of for */}
             <label htmlFor="user">Username:</label>
-            <input type='text' id="user"></input>
+            <input type='text' value="" id="user"></input>
 
             {/* className instead of class */}
             <div className="diff">
@@ -22,7 +22,7 @@ function jsxDifferences(){
 
 
                {/* Boolean attribute requires curly braces */}
-            <input type="checkbox" checked={true} />
+            <input type="checkbox" checked />
 
 
             {/* Event handling using camelCase */}

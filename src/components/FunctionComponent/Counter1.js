@@ -28,7 +28,7 @@ const IncreDecre=()=>{
         }
         const reset=()=>{
             setCount(0)
-            setStepSize(1)
+            setStepSize(0)
         }
     return(
         <div style={{textAlign:"center"}}>
@@ -39,7 +39,10 @@ const IncreDecre=()=>{
                 <input
                     type="number" 
                     value={stepSize}
-                    onChange={(e)=>setStepSize(Number(e.target.value))}
+                    onChange={(e)=>setStepSize(Number(e.target.value))
+                        
+                    }
+                
                 />
             </div>
 

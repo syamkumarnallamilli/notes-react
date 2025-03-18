@@ -12,7 +12,7 @@ const Character=()=>{
         <h3>Tweet</h3>
         <textarea 
             placeholder="what's happening?"
-            value={tweet}
+             value={tweet}
              maxLength={280}
              onChange={(e)=>setTweet(e.target.value)}
              
