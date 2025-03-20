@@ -5,6 +5,7 @@ const Character=()=>{
     const [tweet, setTweet] = useState("");
     const handle=()=>{
         console.log(tweet)
+        setTweet("")
     }
         
     return(

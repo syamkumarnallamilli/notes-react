@@ -238,6 +238,14 @@ React uses key to track which items change, update, or get removed in the list.
 If you don’t provide a key, React will show a warning.
 
 
+ Why is it bad to remove key?
+React throws a warning in the console:
+⚠️ Each child in a list should have a unique "key" prop.
+If the list updates dynamically (e.g., adding/removing items), React may incorrectly update UI since it doesn't track elements efficiently.
+Causes performance issues due to unnecessary re-renders.
+
+
+
 # State and setState in React (Class & Functional Components)
 
 1. In React, state is used to store and manage component-specific data that can change over time.

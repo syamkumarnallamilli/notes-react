@@ -1,7 +1,7 @@
 import React from "react";
 const Child=(Properties)=>{
     return (
-        <div>
+        <div >
             <h3>child component</h3>
             <h4>I'm {Properties.name1}</h4>
             <h4>I'am {Properties.age} years old.</h4>

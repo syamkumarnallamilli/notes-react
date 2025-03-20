@@ -24,18 +24,23 @@ import ClassRendering from './components/ClassComponent/ConditionalRendering';
 import CounterApp from './components/useState Problems/counterBasic';
 import ToggleText from './components/useState Problems/ToggleText';
 import BackgroundColor from './components/useState Problems/Background';
+import FormInputHandling from './components/useState Problems/Form';
+import TogglePasswordVisibility from './components/useState Problems/TogglePassword';
+import NameList from './components/List rendering/NameList';
+import PersonList from './components/List rendering/Person';
+import CheckedForm from './components/Checked';
 
 
 function App() {
   const fruits=["apple","banana","orange","grapes"];
   return (
     <div className="App">
-      <Greet/>
+      {/* <Greet/>
       <MyclassComponent/>
       <Hello/>
       <JsxDifferences/>
       <Properties name="syam"age="25"/>
-      <Properties name="kumar" age="23"> personal details</Properties> 
+      <Properties name="kumar" age="23"> personal details</Properties>  */}
       {/* Passing an Object as a Prop */}
       <Obj details={{name:"Laptop",price:"15000",stock:true}}/>
       <Obj details={{name:"Bluetooth",price:"1000",stock:true}}/>
@@ -44,8 +49,8 @@ function App() {
 
       {/* passing an array as a prop */}
       
-      <Items itemsList={fruits}><p>this is fruits</p></Items>
-      <MyProp name="syam" age={23}/>
+      {/* <Items itemsList={fruits}><p>this is fruits</p></Items>
+      <MyProp name="syam" age={23}/> */}
       {/* <ClassState/>
       <Counter/>
       <CounterFunc/>
@@ -64,12 +69,23 @@ function App() {
         <ParentComponent/>
 
         <ClassRendering/> */}
+           <Character/>
 
+           <Parent/>
         {/* UseStae Problems */}
         <CounterApp/>
         <ToggleText/>
 
         <BackgroundColor/>
+
+        <FormInputHandling/>
+        <TogglePasswordVisibility/>
+
+        <NameList/>
+        <CheckedForm/>
+        
+
+        
     </div>
   );
 }
