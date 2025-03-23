@@ -30,7 +30,24 @@ return isLoggedIn && <UserDashboard/>
 
 
 4️⃣ Using Logical || (Set a Default Value)
+
+    const value = someData || "Default Value";
+
+==>If someData is truthy, it is used.
+==>If someData is falsy (null, undefined, ""), "Default Value" is used.
+
+
+
 5️⃣ Storing JSX in a Variable (For Complex Conditions)
+
+let content;
+if (condition) {
+  content = <p>Condition is true</p>;
+} else {
+  content = <p>Condition is false</p>;
+}
+
+return <div>{content}</div>;
 
 
 
