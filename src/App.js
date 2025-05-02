@@ -40,6 +40,20 @@ import UserProfile from './components/Hooks/UseState/NestedObject';
 import UseStateArray from './components/Hooks/UseState/ArrayState';
 import AddNameInput from './components/Hooks/UseState/ArrayState2';
 import ChatApp from './components/Hooks/UseState/ChatApp';
+import UserList from './components/Hooks/UseEffect/Useeffect1';
+import HookCounterOne from './components/Hooks/UseEffect/HookCounterOne';
+import HookMouse from './components/Hooks/UseEffect/HookMouse';
+import UseReducer from './UseReducer';
+import LoginForm1 from './UseReducerLginForm';
+import Autofocus from './components/Hooks/useRef/Focus';
+import App1 from './reactApp';
+import Navbar from './components/Routing/Components/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Routing/Pages/Home';
+import Products from './components/Routing/Pages/Products';
+import About from './components/Routing/Pages/About';
+import Contact from './components/Routing/Pages/Contact';
+import OptimizedImageGallery from './components/ImageOptimation/ImageOpt';
 
 
 function App() {
@@ -97,7 +111,7 @@ function App() {
          */}
 
          {/* hooks */}
-         <ClassCounter/>
+         {/* <ClassCounter/>
          <HookCounter/>
          <ShoppingCart/>
 
@@ -107,14 +121,38 @@ function App() {
           
          <UseStateObject/>
           <UseStateObject2/>
-          <UserProfile/>
+          <UserProfile/> */}
 
-          <UseStateArray/>
+          {/* <UseStateArray/>
 
-          <AddNameInput/>
+          <AddNameInput/> */}
 
-          <ChatApp/>
-        
+          {/* <ChatApp/> 
+
+          <UserList/>
+
+          <HookCounterOne/>
+
+          <UseReducer/>
+
+           <HookMouse/> */}
+{/* 
+          <LoginForm1/>
+          <Autofocus/>
+           */}
+        {/* <App1/> */}
+
+        <Navbar/>
+        <div style={{display:"flex", justifyContent:"center", alignItems:'center',width:'100%',height:'80vh'}}>
+        <Routes>
+           <Route path='/' element={<Home/>}/> {/*default */}
+           <Route path='/product' element={<Products/>}/>
+           <Route path='/about' element={<About/>}/>
+           <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+        </div>
+
+        <OptimizedImageGallery/>
     </div>
   );
 }
