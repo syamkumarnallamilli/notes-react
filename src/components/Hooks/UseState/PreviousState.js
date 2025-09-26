@@ -20,7 +20,7 @@ function ShoppingCart(){
         }
     
     return(
-        <div>
+        <div >
             <p>addTOCart</p>
 
             <p>Items in cart: {cart}</p>

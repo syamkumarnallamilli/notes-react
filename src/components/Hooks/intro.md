@@ -56,6 +56,7 @@ prevState refers to the previous state value before the state update happens. It
 When updating state in React, it's important to consider previous state to avoid incorrect or outdated updates.
 
 ⚡ Why is Previous State Important?
+
 1 State updates are asynchronous – If we directly modify state using setState(newValue), we may lose updates.
 
 2 Batching of state updates – React may batch multiple state updates together, leading to unexpected behavior.
@@ -118,12 +119,12 @@ Now the count correctly increases by 3! 🎉
 
  # Summary: When to Use prevState?
 
-Scenario	Should Use prevState?	Why?
-Single Click Counter	❌ No	Works fine without it
-Multiple Updates in One Function	✅ Yes	Ensures all updates count
-Rapid User Actions (Like Button, Cart System)	✅ Yes	Prevents missed clicks
-Incremental Updates in Loops	✅ Yes	Each iteration gets correct state
-
+Scenario	                              Should Use prevState?	                                                 Why?
+Single Click Counter	                          ❌ No	                                         Works fine without it
+Multiple Updates in One Function	              ✅ Yes	                                         Ensures all updates count
+Rapid User Actions (Like Button, Cart System) 	✅Yes	                                         Prevents missed clicks
+Incremental Updates in Loops	                  ✅Yes	                                         Each iteration gets correct state
+ 
 
 
 🔹 How to Debug prevState in React?
@@ -279,11 +280,11 @@ function UserProfile() {
 }
 
 export default UserProfile;
-🔹 Now, only name changes, and age remains unchanged.
+🔹 Now, only name changes, and age remains unchanged. 
 
 
 
-📌 Uses of Nested Objects in React State
+📌 Uses of Nested Objects in React State 
 
 Nested objects are widely used in real-world applications to structure complex data and ensure better state management. Here are key use cases:
 

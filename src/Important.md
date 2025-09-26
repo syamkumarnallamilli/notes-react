@@ -24,9 +24,6 @@ It's useful for privacy.
 ✅ Best Practice for External Links
 When you're linking to external sites with target="_blank", always include:
 
-html
-Copy
-Edit
 rel="noopener noreferrer"
 This protects your app from:
 

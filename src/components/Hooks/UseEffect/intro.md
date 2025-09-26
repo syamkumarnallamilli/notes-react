@@ -36,7 +36,7 @@ useEffect(() => {
 Callback Function (() => {})
 
 The function inside useEffect runs when the component mounts or updates.
-
+ 
 Cleanup Function (return () => {})
 
 If provided, it runs when the component unmounts or before the effect runs again.

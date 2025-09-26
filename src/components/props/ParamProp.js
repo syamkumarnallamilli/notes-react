@@ -1,5 +1,5 @@
 import React from "react";
-const Child=(Properties)=>{
+const Childs=(Properties)=>{
     const productDetails = {
         id: 101,
         name: "Laptop",
@@ -15,4 +15,4 @@ const Child=(Properties)=>{
 
     
 }
-export default Child;
+export default Childs;

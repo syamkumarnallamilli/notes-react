@@ -9,7 +9,7 @@ import Obj from './components/props/Object';
 import Items from './components/props/ItemList';
 import MyProp from './components/ClassComponent/ClassProp';
 import ClassState from './components/ClassComponent/ClassState';
-import Counter from './components/ClassComponent/CounterClass';
+import counterBasic from './components/useState Problems/counterBasic';
 import CounterFunc from './components/FunctionComponent/CounterFunction';
 import IncreDecre from './components/FunctionComponent/Counter1';
 import LoginForm from './components/FunctionComponent/Login';
@@ -18,6 +18,7 @@ import Gallery from './components/Profiles';
 import Click from './components/EventHandling/FunctionClick';
 import ClassClick from './components/EventHandling/ClassClick';
 import Parent from './components/props/Parent';
+
 import EventBind from './components/ClassComponent/EventBind';
 import ParentComponent from './components/ClassComponent/ParentComponent';
 import ClassRendering from './components/ClassComponent/ConditionalRendering';
@@ -54,12 +55,25 @@ import Products from './components/Routing/Pages/Products';
 import About from './components/Routing/Pages/About';
 import Contact from './components/Routing/Pages/Contact';
 import OptimizedImageGallery from './components/ImageOptimation/ImageOpt';
-
+import Counter from './components/useState Problems/counterBasic';
+import Parent1 from './components/props/Parent1';
+import PrevState4 from "./components/Hooks/UseState/PrevState4"
+import Main from './components/useState Problems/Main';
+import UseEffect from './components/Hooks/UseEffect/UseEffect';
 
 function App() {
   const fruits=["apple","banana","orange","grapes"];
   return (
     <div className="App">
+      <Navbar/>
+        <div style={{display:"flex", justifyContent:"center", alignItems:'center',width:'100%',height:'80vh'}}>
+        <Routes>
+           <Route path='/' element={<Home/>}/> {/*default */}
+           <Route path='/product' element={<Products/>}/>
+           <Route path='/about' element={<About/>}/>
+           <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+        </div>
       {/* <Greet/>
       <MyclassComponent/>
       <Hello/>
@@ -97,8 +111,10 @@ function App() {
            {/* <Character/>
 
            <Parent/> */}
+           {/* <Parent/> */}
+           <Parent1/>
         {/* UseStae Problems */}
-        {/* <CounterApp/>
+        <CounterApp/>
         <ToggleText/>
 
         <BackgroundColor/>
@@ -108,7 +124,7 @@ function App() {
 
         <NameList/>
         <CheckedForm/>
-         */}
+        
 
          {/* hooks */}
          {/* <ClassCounter/>
@@ -141,18 +157,16 @@ function App() {
           <Autofocus/>
            */}
         {/* <App1/> */}
+<HookCounter/>
+      <Counter/>
+      <PrevState4/>
+        {/* <OptimizedImageGallery/> */}
 
-        <Navbar/>
-        <div style={{display:"flex", justifyContent:"center", alignItems:'center',width:'100%',height:'80vh'}}>
-        <Routes>
-           <Route path='/' element={<Home/>}/> {/*default */}
-           <Route path='/product' element={<Products/>}/>
-           <Route path='/about' element={<About/>}/>
-           <Route path='/contact' element={<Contact/>}/>
-        </Routes>
-        </div>
 
-        <OptimizedImageGallery/>
+        <Main/>
+
+        {/* useeffect */}
+        <UseEffect/>
     </div>
   );
 }

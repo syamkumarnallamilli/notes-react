@@ -27,7 +27,7 @@ const PrevState = () => {
   };
     
     return(
-        <div>
+        <div style={{border:"2px solid green"}}>
             <h3>function counter</h3>  
              {/* <button onClick={()=>setCount(count+1)}>count {count}</button> When the button is clicked, the state is updated, and the component re-renders. */}
                                      {/* updates the count. */}
