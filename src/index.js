@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import GlobalSate from './components/Hooks/context/UseContext';
+import GlobalThemeContext from './components/Hooks/context/ThemeContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
+  <GlobalThemeContext>
+  <GlobalSate>
   <BrowserRouter>
     <App />
     </BrowserRouter>
+    </GlobalSate>
+    </GlobalThemeContext>
   // </React.StrictMode>
 );
 

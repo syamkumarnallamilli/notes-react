@@ -60,11 +60,14 @@ import Parent1 from './components/props/Parent1';
 import PrevState4 from "./components/Hooks/UseState/PrevState4"
 import Main from './components/useState Problems/Main';
 import UseEffect from './components/Hooks/UseEffect/UseEffect';
+import Basic from './components/Practise-base/Basic';
+
 
 function App() {
   const fruits=["apple","banana","orange","grapes"];
   return (
-    <div className="App">
+    <div className="App" >
+     
       <Navbar/>
         <div style={{display:"flex", justifyContent:"center", alignItems:'center',width:'100%',height:'80vh'}}>
         <Routes>
@@ -72,8 +75,12 @@ function App() {
            <Route path='/product' element={<Products/>}/>
            <Route path='/about' element={<About/>}/>
            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/Basic' element={<Basic name="Testing..." fruits={fruits} />}/>
         </Routes>
         </div>
+        <div style={{marginTop:'100px',padding:'50px'}}>
+        {/* <ClassState/> */}
+         {/* <Basic name="Testing..." fruits={fruits}/> */}
       {/* <Greet/>
       <MyclassComponent/>
       <Hello/>
@@ -112,9 +119,9 @@ function App() {
 
            <Parent/> */}
            {/* <Parent/> */}
-           <Parent1/>
+           {/* <Parent1/> */}
         {/* UseStae Problems */}
-        <CounterApp/>
+        {/* <CounterApp/>
         <ToggleText/>
 
         <BackgroundColor/>
@@ -123,7 +130,7 @@ function App() {
         <TogglePasswordVisibility/>
 
         <NameList/>
-        <CheckedForm/>
+        <CheckedForm/> */}
         
 
          {/* hooks */}
@@ -156,17 +163,18 @@ function App() {
           <LoginForm1/>
           <Autofocus/>
            */}
-        {/* <App1/> */}
+        {/* <App1/>
 <HookCounter/>
       <Counter/>
-      <PrevState4/>
+      <PrevState4/> */}
         {/* <OptimizedImageGallery/> */}
 
-
-        <Main/>
+{/* 
+        <Main/> */}
 
         {/* useeffect */}
-        <UseEffect/>
+        {/* <UseEffect/> */}
+    </div>
     </div>
   );
 }
